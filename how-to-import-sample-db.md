@@ -1,4 +1,4 @@
-##How to import sample database
+## How to import sample database
 
 In order to import the sample database, you will need to ahve MongoDB
 server installed and running. I am assuming that the MongoDB server directory
@@ -9,12 +9,12 @@ with the 'aircraft' and 'flights' collections.
 
 The sample collections are stored in this repository, under the 'sampledb' directory.
 
-###Example:=
+### Example
 
 mongoimport --file C:\aircraft.json --c aircraft --db flightmgmt --drop
 mongoimport --file C:\flights.json --c flights --db flightmgmt --drop
 
-###Explanation:=
+### Explanation
 
 Let's take the first command as an example.
 
@@ -24,7 +24,7 @@ will be dropped first, so that the data is not appended, byt recreated
 from scratch.
 If no db or collection exists, they will be created for you.
 
-###Docs
+### Docs
 
 https://docs.mongodb.com/manual/reference/program/mongoimport/
 
