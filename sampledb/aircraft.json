@@ -1,0 +1,63 @@
+ {
+	"code": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+    "model" : "Boeing 737-400",
+    "minRunwayLength" : 1700,
+	"range": 3500,
+	"capacity": 189
+}
+{
+	"code": "eede6be6-f716-4e2e-bf81-885f0a16a50c",
+    "model" : "Boeing 737-800",
+    "minRunwayLength" : 2500,
+	"range": 5765,
+	"capacity": 200
+}
+{
+	"code": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+    "model" : "Airbus A320",
+    "minRunwayLength" : 2500,
+	"range": 6000,
+	"capacity": 150
+}
+{
+	"code": "a3faaef2-fe54-4949-928f-be93584da471",
+    "model" : "Airbus A319",
+    "minRunwayLength" : 2255,
+	"range": 6900,
+	"capacity": 124
+}
+{
+	"code": "eede6be6-f716-4e2e-bf81-885f0a16a50c",
+    "model" : "Boeing 737-900",
+    "minRunwayLength" : 2975,
+	"range": 5600,
+	"capacity": 215
+}
+{
+	"code": "51192f6b-9c26-4ef9-b843-cf241f326091",
+    "model" : "Embraer E-175",
+    "minRunwayLength" : 1261,
+	"range": 4000,
+	"capacity": 80
+}
+{
+	"code": "00126a63-f342-4ccd-ba86-4a7beecf10c0",
+    "model" : "Airbus A350",
+    "minRunwayLength" : 3200,
+	"range": 15000,
+	"capacity": 300
+}
+{
+	"code": "4f356f56-84dd-484f-a5f7-b960dfba5823",
+    "model" : "Boeing 747",
+    "minRunwayLength" : 3100,
+	"range": 14000,
+	"capacity": 467
+}
+{
+	"code": "0c3a60d6-8c99-472e-bf23-c1e689c5f6eb",
+    "model" : "ATR 72",
+    "minRunwayLength" : 1000,
+	"range": 3218,
+	"capacity": 78
+}
