@@ -11,8 +11,8 @@ The sample collections are stored in this repository, under the 'sampledb' direc
 
 ### Example
 
-mongoimport --file C:\aircraft.json --c aircraft --db flightmgmt --drop
-mongoimport --file C:\flights.json --c flights --db flightmgmt --drop
+mongoimport --file C:\aircraft.json --collection aircraft --db flightmgmt --drop
+mongoimport --file C:\flights.json --collection flights --db flightmgmt --drop
 
 ### Explanation
 
