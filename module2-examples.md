@@ -8,31 +8,32 @@
 
 ### Queries
 
-`db.flights.count()`			
-Counts all the documents in the flights collection
+		
+1. Counts all the documents in the flights collection
+`db.flights.count()`	
+
+			
+2. Prints all the documents in the flights collection
+`db.flights.find()`	
 
 
-`db.flights.find()`				
-Prints all the documents in the flights collection
-
-
+3. Prints all the documents in the flights collecion in a redable JSON format
 `db.flights.find().pretty()`	
-Prints all the documents in the flights collecion in a redable JSON format
 
 
-`db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1}).pretty()`
-Prints the duration, departure.city and destination.city to the console in a redable JSON format
+4. Prints the duration, departure.city and destination.city to the console in a redable JSON format
 The _id is also going to be added by default
+`db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1}).pretty()`
 
 
-`db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1, _id: 0}).pretty()`
-Prints the duration, departure.city and destination.city to the console in a redable JSON format
+5. Prints the duration, departure.city and destination.city to the console in a redable JSON format
 The _id is going to be excluded
+`db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1, _id: 0}).pretty()`
 
 
+6. Prints the first 5 documents returned by the find method to the screen in a readable JSON format
 `db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1, _id: 0}).limit(5).pretty()`
-Prints the first 5 documents returned by the find method to the screen in a readable JSON format
 
 
+7. Prints the flight documents in descending order by the duration field.
 `db.flights.find({}, {duration: 1, "departure.city": 1, "destination.city": 1, _id: 0}).sort({"duration: -1"}).pretty()`
-Prints the flight documents in descending order by the duration field.
