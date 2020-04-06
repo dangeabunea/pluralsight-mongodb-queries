@@ -2,9 +2,19 @@
 
 ### MongoDB Server Navigation
 
-`show dbs`		- Shows all the databases present on the server
-`use flightmgmt`	- Select a database to work against. After this command, all the queries will be issued against `flightmgmt`
-`show collections`	- Shows all the collections on the seleted database
+1. Shows all the databases present on the server
+
+`show dbs`
+
+	
+2. Select a database to work against. After this command, all the queries will be issued against `flightmgmt`
+
+`use flightmgmt`
+
+3. Show the collections in the `flightmgmt` database
+
+`show collections`	
+
 
 ### Queries
 
