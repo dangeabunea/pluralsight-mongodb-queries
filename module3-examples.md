@@ -102,7 +102,8 @@
 
 1. Find all the aircraft within 10 km of lon=26.2, lat=44.4
 
-````db.aircraft.find({position: {$near : {
+````
+db.aircraft.find({position: {$near : {
 	$geometry: {type: "Point", coordinates: [26.2, 44.4]}, 
 	$maxDistance: 10000
 	}}
