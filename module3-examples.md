@@ -110,3 +110,44 @@ db.aircraft.find({position: {$near : {
 }).pretty()
 ````
 
+
+### Demo
+
+1) Find flight by id
+
+	`db.flights.findOne({_id: ObjectId("5e8aa95dab3db3fab191ff969f")})`
+
+2) Flights that are delayed
+
+	````
+	db.flights.find({delayed:true}).pretty()
+	db.flights.find({delayed: {$eq: true}}).pretty()
+	db.flights.find({delayed: {$neq: false}}).pretty()
+	````
+
+
+3) Number of non-internal flights
+
+	````
+	db.flights.find({type: {$in: ["International", "Intercontinental"]}}).count()
+	db.flights.find({type: {$nin: ["Internal"]}}).count()
+	````
+
+4) Flights that depart today / in specific dates
+
+	````
+	db.flights.find({departureDate: ISODate("2020-02-20T21:30:00Z")})
+	db.flights.find({departureDate: {$gt: ISODate("2020-02-22")}})
+	````
+	
+5) Flights flights shorter than 3 hours and display them in ascending order
+
+	
+	`db.flights.find({duration:{$lte: 180}}, {duration:1}).sort({duration:1})`
+
+
+6) Bad weather near Paris. All flights that depart within 100 km from Paris (2.35, 48.85)
+
+	````
+	db.flights.find({"departure.location": {$near: { $geometry: {type:"Point", coordinates: [2.35,
+	````
