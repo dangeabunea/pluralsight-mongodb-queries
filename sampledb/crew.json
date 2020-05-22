@@ -1,0 +1,20 @@
+{
+	"name": "Andrei Luca",
+	"skills": ["technical", "management"],
+	"address": {"city": "Bucharest", "country": "Romania"}
+}
+{
+	"name": "Anna Smith",
+	"skills": ["technical", "management"],
+	"address": {"city": "Bucharest", "country": "Romania"}
+}
+{
+	"name": "Francois Picard",
+	"skills": [],
+	"address": {"city": "Paris", "country": "France"}
+}
+{
+	"name": "Gunter Hoff",
+	"skills": ["engineering"],
+	"address": {"city": "Berlin", "country": "Germany"}
+}

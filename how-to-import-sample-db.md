@@ -7,12 +7,16 @@ is also available on the path.
 After this, you can use the mongoimport command to create the 'flightmgmt' database
 with the 'aircraft' and 'flights' collections.
 
+You can also import the 'crew' collection. It is not used in the demos, but some examples
+in the slides relate to it.
+
 The sample collections are stored in this repository, under the 'sampledb' directory.
 
 ### Example
 
 mongoimport --file C:\aircraft.json --collection aircraft --db flightmgmt --drop
 mongoimport --file C:\flights.json --collection flights --db flightmgmt --drop
+mongoimport --file C:\crew.json --collection crew --db flightmgmt --drop
 
 ### Explanation
 
