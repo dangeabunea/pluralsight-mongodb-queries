@@ -149,5 +149,7 @@ db.aircraft.find({position: {$near : {
 6) Bad weather near Paris. All flights that depart within 100 km from Paris (2.35, 48.85)
 
 	````
-	db.flights.find({"departure.location": {$near: { $geometry: {type:"Point", coordinates: [2.35,
+	db.flights.find({"departure.location": {$near: { $geometry: {type:"Point", coordinates: [2.35, 48.85]},
+	$maxDistance: 100000}}
+	}).pretty
 	````
